@@ -1,0 +1,210 @@
+/* Columns.css */
+body {
+  /* background-color: white; */
+}
+.columns-container {
+  display: flex;
+  flex-direction: row; /* Align columns horizontally */
+  height: 100vh; /* Set height to 100% of viewport height */
+  background-color: white;
+  width: 100vw;
+}
+/* .colums1-div:hover {
+  background-color: white;
+} */
+.column {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Occupy full height of the container */
+}
+
+#column1 {
+  flex: 0.06;
+  background-color: #e2ebf4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Align items to the start */
+  align-items: center;
+}
+
+#column1 a {
+  color: black;
+}
+
+#column2 {
+  flex: 0.25;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items to the start */
+  align-items: flex-start;
+}
+
+.icon-container {
+  padding-left: 25px;
+
+  /* Align items to the start */
+}
+
+.icon {
+  margin: 5px; /* Adjust spacing between icons */
+}
+.column1-div {
+  /* fontSize: "2em", margin: "1em 0" */
+  /* font-size */
+  font-size: 2em;
+  margin: 1em 0;
+}
+.card {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  width: 100%; /* Two cards per row with some spacing */
+  background-color: #fff;
+  /* border: 1px solid #ccc; */
+  padding: 5px 10px;
+  transition: all 200ms;
+  cursor: pointer;
+  /* height: px; */
+}
+
+.contact-card.selected {
+  background-color: rgb(240, 240, 240);
+}
+
+.contact-card:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+.contact-card input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* App.css or Columns.css */
+#column3 {
+  flex: 0.54;
+  background-color: rgb(240, 240, 240);
+  border-left: 1px rgb(182, 182, 182) solid;
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+
+  background-color: #fff; /* White */
+}
+
+.details {
+  margin-left: 10px;
+}
+
+.chat-container {
+  overflow-y: auto; /* Enable scrolling if content exceeds container height */
+  height: calc(100% - 100px);
+  padding: 10px;
+}
+
+.message {
+  display: flex;
+  align-items: flex-start; /* Align items to the start */
+  margin-bottom: 10px;
+}
+
+.message-content {
+  max-width: 70%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.incoming {
+  flex-direction: row-reverse; /* Reverse direction for receiver */
+}
+
+.outgoing {
+  background-color: #dcf8c6; /* Light green */
+}
+
+.message-input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.message-input input {
+  flex: 1;
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 0px;
+}
+
+.message-input button {
+  padding: 8px 15px;
+  background-color: #007bff; /* Blue */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  flex: 0.1;
+  margin-top: 1px;
+}
+
+.message-input button:hover {
+  background-color: #0056b3; /* Dark blue */
+}
+
+.timestamp {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* App.css or Columns.css */
+#column4 {
+  flex: 0.25;
+  /* Gold */
+  background-color: rgb(240, 240, 240);
+  /* opacity: 0.2; */
+  border-left: 1px rgb(182, 182, 182) solid;
+}
+
+.card {
+  background-color: #fff;
+  /* padding: 20px; */
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.btn {
+  background-color: white;
+  border: 1px solid rgb(93, 91, 91);
+  border-radius: 4px;
+  margin: 0px 8px;
+  margin-bottom: 25px;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 2px 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.btn:hover {
+  background-color: #bab6b6;
+  /* opacity: 0.2; */
+}
+
+.avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.avatar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
